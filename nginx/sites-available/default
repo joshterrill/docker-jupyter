@@ -33,7 +33,7 @@ server {
 	#
 	include /etc/nginx/snippets/ssl.conf;
 
-	root /var/www/html; # /home/aurora/web;
+	root /var/www/html; # /home/web;
 
 	# Add index.php to the list if you are using PHP
 	index index.html index.htm index.nginx-debian.html;

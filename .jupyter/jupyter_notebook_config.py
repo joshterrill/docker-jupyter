@@ -65,10 +65,10 @@
 #  token login mechanism.
 #  
 #  This can be set to false to prevent changing password from the UI/API.
-#c.NotebookApp.allow_password_change = True
+c.NotebookApp.allow_password_change = True
 
 ## Whether to allow the user to run the notebook as root.
-#c.NotebookApp.allow_root = False
+c.NotebookApp.allow_root = True
 
 ## DEPRECATED use base_url
 #c.NotebookApp.base_project_url = '/'

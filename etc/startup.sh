@@ -16,7 +16,7 @@
 # spend hours debugging it or 2) willing to tolerate unclean exit of
 # jupyter and docker reporting non-zero exit status.
 
-trap 'su -l -c "jupyter notebook stop -y" aurora; exit 0;' SIGTERM 
+trap 'su -l -c "jupyter notebook stop -y" root; exit 0;' SIGTERM 
 /usr/sbin/nginx
-su -l -c 'jupyter notebook' aurora &
+su -l -c 'jupyter notebook' root &
 wait
